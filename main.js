@@ -66,11 +66,15 @@ const printToDom = (divId, textToPrint) => {
 
 const domStringBuilder = () => {
     let domString ='';
+    domString += '<div class="row">';
     products.forEach ((product)=> {
+        domString += `<div class="col-sm-4">`
         domString += `<h3>${product.title}</h3>`
-    });
-    printToDom('productDiv',domString)
-};
+        domString += `</div>`
+    })
+    domString += '</div>';
+    printToDom('container',domString);
+}
 
 const init = () => {
     domStringBuilder();
