@@ -1,5 +1,9 @@
 body {
     background-color: purple;
-    color: white;
+    color: black;
     text-align: center;
+}
+
+.card {
+    margin: 10px;
 }
